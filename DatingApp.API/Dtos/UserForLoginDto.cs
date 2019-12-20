@@ -7,6 +7,7 @@ namespace DatingApp.API.Dtos
         [Required]
         public string Username { get; set; }
         [Required]
+        [MinLength(5, ErrorMessage="Password must be atleast 5 characters")]
         public string Password { get; set; }
     }
 }
